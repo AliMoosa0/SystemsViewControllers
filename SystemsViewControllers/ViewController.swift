@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class ViewController: UIViewController, UIImagePickerController, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imgView: UIImageView!
     
@@ -54,6 +54,7 @@ class ViewController: UIViewController, UIImagePickerController, UINavigationCon
             
         }
         
+
         alertController.popoverPresentationController?.sourceView = sender
         present(alertController, animated: true, completion: nil)
         
